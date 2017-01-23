@@ -1,9 +1,27 @@
-#include <stdio.h>
+#include <iostream>
 
-void main() {
+namespace A 
+{
+	int a;
+	int b;
+	void print(){
+	printf("%d %d", a, b);
+	     }
+}
+namespace B
+{
+	int a;
+	int b;
+}
 
-	printf("hello world!");
+using namespace A;
 
-	printf("\n   sorry ! my heart is broken:) ");
+void main()
+{
+	
+a=3;
+b=2;
+print();
+
 
 }
